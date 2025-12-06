@@ -8,15 +8,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on: self-hosted
-    services:
-      postgres:
-        image: postgres:15-alpine
-        ports:
-          - "5432:5432"
-        env:
-          POSTGRES_DB: kubsu
-          POSTGRES_USER: kubsu
-          POSTGRES_PASSWORD: kubsu
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
