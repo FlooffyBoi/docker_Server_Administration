@@ -27,5 +27,5 @@ jobs:
       - name: Deploy to Ubuntu server
         run: |
           podman pull flooffyboi768/dubinsky-kubsu
-          podman run --replace --name dubinsky --network host flooffyboi768/dubinsky-kubsu
+          podman run -d --replace --name dubinsky --network host flooffyboi768/dubinsky-kubsu
            
